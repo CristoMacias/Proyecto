@@ -70,19 +70,81 @@ h1{
     align-items: center;
 }
 .cuadro{
-    display: flex;
     background-color: var(--medio);
-    height: 300px;
-    width: 70%;
+    height: 400px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding: 50px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px grey;
     
 }
 .formulario{
-    border: 3px black solid;
+    display: flex;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+}
+input:invalid{
+    border: 1px solid red;
+}
+
+input:valid{
+    border: 1px solid green;
+}
+
+textarea:valid{
+    border: 1px solid green;
+}
+textarea:invalid{
+    border: 1px solid red;
+}   
+
+.box_formulario{
+    display: flex;
+}
+.adorno_box{
     width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    display: inline;
+}
+.icono_telefono{
+    font-size: 50px;
+}
+.espacio_final{
+    height: 50px;
+}
+.enlaces{
+    justify-content: center;
+    background-color: white;
+    border: 2px solid var(--negro);
+    text-decoration: none;
+    color: var(--negro) ;
+    padding: 5px;
+    box-shadow: 4px 4px 4px grey;    
+    transition: 0.5s;
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 2px ridge;
+}
+.enlaces:hover{
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 6px grey;
+    box-shadow: 6px 6px 6px grey;
+}
+.accion{
+    padding: 10px;
+    text-align: center;
+}
+footer{
+    background-color: var(--claro);
+    height: 250px;
+    border-top: outset 2px var(--medio);
+    border-radius: 4px;
+    text-align: center;
 }

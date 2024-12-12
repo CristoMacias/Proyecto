@@ -19,7 +19,8 @@
 <body>
     <div class="inicio">
         <div>
-            <a href="../Inicio/Proyecto.html"><img class=imagen_logo src="../Inicio/Logo_peq.jpg" alt="Logo Ana Mac Estética."></a>
+            <a href="../Inicio/Proyecto.html"><img class=imagen_logo src="../Inicio/Logo_peq.jpg"
+                    alt="Logo Ana Mac Estética."></a>
         </div>
         <div class="lista-nav_menu">
             <ul>
@@ -31,16 +32,45 @@
         </div>
     </div>
     <div>
-        <strong><h1 class="contacto">Contacto</h1></strong>
+        <strong>
+            <h1 class="contacto">Contacto</h1>
+        </strong>
     </div>
-    <div class="cuadro">   
-        <div class="formulario">
-            <input type="text" name="Nombre" placeholder="Nombre">
-            <input type="text" name="Apellidos" placeholder="Apellidos">
-            <input type="email" name="email" placeholder="Correo electrónico">
-            <input type="tel" name="Telefono" placeholder="Teléfono">
-        </div>
+    <div class="adorno_box">
+        <p class="icono_telefono">☎</p>
+        <h1>Déjanos tus datos y te contactaremos</h1>
     </div>
+    <div class="cuadro">
+        <form>
+            <div class="formulario">
+                <input type="text" name="Nombre" placeholder="Nombre" required pattern="[A-Za-z, ]*"
+                    title="Introduza el nombre, este campo solo admite letras.">
+                <input type="text" name="Apellidos" placeholder="Apellidos" required pattern="[A-Za-z, ]*"
+                    title="Introduza los apellidos, este campo solo admite letras.">
+                <input type="email" name="email" placeholder="Correo electrónico" required
+                    pattern="[A-Za-z0-9_-.]+@(gmail|outlook|yahoo|hotmail)\.(es|com)"
+                    title="El correo debe ir sin espacios conteniendo @ y incluyendo yahoo, gmail, outlook o hotmail terminando en .com o .es.">
+                <input type="tel" name="Telefono" placeholder="Teléfono" pattern="[0-9+]{12}"
+                    title="Prefijo +34, Formato +xx xxx xx xx xx">
+                <textarea name="Caja descripcion" cols="32" rows="10" placeholder="Descríbenos que necesita..."
+                    minlength="20" title="Debe introducir como mínimo 20 caracteres."></textarea pattern=[A-Za-z0-9]10+>
 
+        </div>
+        <div class="accion">
+            <input class="enlaces" type="submit" value="Enviar">
+            <input class="enlaces" type="reset" value="Borrar todo">
+        </div>
+    </form>
+
+    </div>
+    <div class="espacio_final">
+    </div>
 </body>
+<footer>
+    <p>Salón de estética Ana Mac</p>
+    <p>Calle Garcia Lorca 21 1º, 06850, Arroyo de San Serván</p>
+    <p>_____________</p>
+    <p>SIGUENOS</p>
+    <a href="https://www.instagram.com/estetica_anamac/?hl=es"><img src="../Inicio/icono_instagram.png"></a>
+</footer>
 </html>
